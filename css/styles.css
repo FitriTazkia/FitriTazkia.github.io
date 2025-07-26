@@ -156,3 +156,41 @@ nav ul {
         filter: blur(2px);
     }
 }
+
+#fire-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.bg-flame {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background: radial-gradient(ellipse at center, #ffd700 0%, #ff512f 60%, #dd2476 100%);
+    border-radius: 50% 50% 20% 20%;
+    opacity: 0.3;
+    animation: bgFlameMove 2s infinite alternate;
+    box-shadow: 0 0 30px 10px #ff512f55;
+    filter: blur(1px);
+}
+
+@keyframes bgFlameMove {
+    0% {
+        transform: scaleY(1) translateY(0) scaleX(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scaleY(1.3) translateY(-20px) scaleX(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scaleY(1.1) translateY(-40px) scaleX(0.9);
+        opacity: 0.2;
+    }
+}
