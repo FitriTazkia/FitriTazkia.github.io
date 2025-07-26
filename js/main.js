@@ -14,4 +14,15 @@ window.addEventListener('DOMContentLoaded', () => {
         flame.style.animationDelay = (Math.random() * 2) + 's';
         fireBg.appendChild(flame);
     }
+
+    // Opening logic
+    const opening = document.getElementById('fire-opening');
+    const header = document.querySelector('.fire-header');
+    setTimeout(() => {
+        opening.classList.add('hide');
+        setTimeout(() => {
+            opening.style.display = 'none';
+            header.style.display = '';
+        }, 1000); // tunggu transisi selesai
+    }, 2500); // tampil 2.5 detik
 });
