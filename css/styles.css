@@ -60,6 +60,13 @@ body.fire-bg {
     color: #ffd700;
     text-shadow: 0 0 10px #ff512f, 0 0 20px #ff512f, 0 0 30px #ffd700;
     font-weight: bold;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; text-shadow: 0 0 10px #ff512f, 0 0 20px #ff512f, 0 0 30px #ffd700; }
+    50% { opacity: 0.85; text-shadow: 0 0 20px #ffd700, 0 0 30px #ff512f; }
+    100% { opacity: 1; text-shadow: 0 0 10px #ff512f, 0 0 40px #ffd700; }
 }
 
 nav ul {
