@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom styles for fire effect */
+        #fire-opening {
+            position: fixed;
+            z-index: 9999;
+            left: 0; top: 0; right: 0; bottom: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a1a1a 0%, #ff512f 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 1s;
+        }
+
+        .fire-opening-animation {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        #fire-opening.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
 </head>
 <body class="fire-bg">
     <div id="fire-background"></div>
