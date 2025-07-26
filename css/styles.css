@@ -40,3 +40,59 @@ h1 {
     bottom: 0;
     width: 100%;
 }
+
+body.fire-bg {
+    background: linear-gradient(135deg, #1a1a1a 0%, #ff512f 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.fire-header, .fire-footer {
+    background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 81, 47, 0.3);
+}
+
+.fire-text {
+    color: #ffd700;
+    text-shadow: 0 0 10px #ff512f, 0 0 20px #ff512f, 0 0 30px #ffd700;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.fire-link {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.fire-link:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #ff512f, 0 0 20px #ffd700;
+}
+
+.fire-section {
+    background: rgba(30, 30, 30, 0.8);
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-radius: 16px;
+    max-width: 700px;
+    box-shadow: 0 0 30px 5px #ff512f55;
+}
+
+.fire-footer {
+    margin-top: 40px;
+    font-size: 1.1em;
+}
